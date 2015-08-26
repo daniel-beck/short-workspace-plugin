@@ -1,0 +1,8 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <f:optionalBlock name="enableShortWorkspace" title="${%Use short workspace paths}"
+                     checked="${instance!=null}">
+        <f:entry>
+            <f:checkbox field="inFolder" title="${%Place short workspace inside the workspace of this folder}"/>
+        </f:entry>
+    </f:optionalBlock>
+</j:jelly>
